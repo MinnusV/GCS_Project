@@ -41,7 +41,7 @@
 
     <Button
         android:id="@+id/BtnCalcular"
-        android:layout_width="wrap_content"
+        android:layout_width="124dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="145dp"
         android:layout_marginStart="145dp"
@@ -54,9 +54,9 @@
 
     <TextView
         android:id="@+id/ResultId"
-        android:layout_width="350dp"
+        android:layout_width="378dp"
         android:layout_height="50dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintTop_toBottomOf="@+id/BtnCalcular"
         tools:layout_editor_absoluteX="17dp" />
 
