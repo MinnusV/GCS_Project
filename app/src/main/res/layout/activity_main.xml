@@ -11,50 +11,58 @@
         android:layout_width="94dp"
         android:layout_height="25dp"
         android:layout_marginEnd="48dp"
-        android:text="Altura (cm)"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Altura (m)"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/AlturaId"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/AlturaId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="16dp" />
 
     <EditText
         android:id="@+id/PesoId"
-        android:layout_width="94dp"
+        android:layout_width="268dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginRight="16dp" />
 
     <EditText
         android:id="@+id/AlturaId"
-        android:layout_width="94dp"
+        android:layout_width="268dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/PesoId"
+        android:layout_marginRight="16dp" />
 
     <Button
         android:id="@+id/BtnCalcular"
-        android:layout_width="124dp"
+        android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="145dp"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="180dp"
-        android:text="Calcular"
+        android:layout_marginTop="224dp"
+        android:text="Mostrar IMC"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/ResultId"
-        android:layout_width="378dp"
+        android:layout_width="373dp"
         android:layout_height="50dp"
         android:layout_marginTop="48dp"
         android:textAlignment="center"
@@ -62,17 +70,39 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/BtnCalcular"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteX="20dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="94dp"
         android:layout_height="25dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
         android:text="Peso (Kg)"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/PesoId"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/PesoId"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="339dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Calculo de IMC"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
